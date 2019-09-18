@@ -1,0 +1,49 @@
+.abc ul{
+    float: left;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.abc ul li a{
+    display: block;
+    font-family:arial;
+    color: white;
+    font-size: 15px;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.abc ul li ul{
+    text-align: left;
+    display: none;
+    position: absolute;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.abc ul li:hover{
+    text-decoration:none;
+    border-bottom: 3px solid red;
+}
+
+.abc ul li:hover ul{
+    display: block;
+    z-index: 9999;
+}
+
+.abc ul li ul li{
+    width: 110px;
+}
+
+.abc ul li ul li a{
+    padding: 8px 14px;
+}
+
+.abc ul li ul li a:hover{
+    text-decoration:none;
+    border-bottom: 0px solid red;
+}

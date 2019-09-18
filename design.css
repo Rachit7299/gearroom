@@ -1,0 +1,49 @@
+nav ul{
+    float: left;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    font-family:arial;
+    color: white;
+    font-size: 15px;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+nav ul li ul{
+    text-align: left;
+    display: none;
+    position: absolute;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+nav ul li:hover{
+    text-decoration:none;
+    border-bottom: 3px solid red;
+}
+
+nav ul li:hover ul{
+    display: block;
+    z-index: 9999;
+}
+
+nav ul li ul li{
+    width: 110px;
+}
+
+nav ul li ul li a{
+    padding: 8px 14px;
+}
+
+nav ul li ul li a:hover{
+    text-decoration:none;
+    border-bottom: 0px solid red;
+}
